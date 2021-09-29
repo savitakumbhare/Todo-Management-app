@@ -3,8 +3,7 @@ require "date"
 
 class Todo < ActiveRecord::Base
   def self.show_list
-    #list = []
-    #all.map { |todo| todo.to_displayable_string }
+    
     puts "My Todo-list\n\n"
 
     puts "Overdue\n"
