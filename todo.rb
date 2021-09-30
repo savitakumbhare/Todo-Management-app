@@ -2,7 +2,6 @@ require "active_record"
 require "date"
 
 class Todo < ActiveRecord::Base
-  NO_DATE = " "
   def self.overdue
     where("due_date < ?", Date.today)
   end
